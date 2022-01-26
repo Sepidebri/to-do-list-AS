@@ -1,0 +1,89 @@
+#list-content {
+  height: 100%;
+  .cursor {
+    cursor: pointer;
+  }
+  img {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 50px;
+  }
+  h1 {
+    color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: -3px 3px 17px 9px #aaaaaa;
+    border-radius: 50px;
+    padding: 0 15px;
+  }
+  #list-content__inner {
+    height: 100%;
+    .personal-list {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 400px;
+      height: 100%;
+      box-shadow: 8px 14px 17px 9px #aaaaaa;
+      background: linear-gradient(to right, #e60d49, #32203a);
+      #menu-closed {
+        img {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: 10px 10px 0 0;
+          padding: 2px;
+        }
+      }
+      .add-palce {
+        max-width: 300px;
+        margin-right: 100px;
+        margin-top: 20px;
+        box-shadow: 3px 4px 10px 1px #f060609a;
+        color: #e60d49;
+        padding: 5px;
+        font-weight: 700;
+      }
+      .click-add {
+        box-shadow: 3px 4px 10px 1px #f060609a;
+        background: #f06060;
+        color: #ffffff;
+        max-width: 200px;
+        padding: 5px;
+      }
+      #list {
+        li {
+          border-radius: 10px;
+          box-shadow: -3px 3px 17px 9px #aaaaaa;
+          background: #ffffff;
+          margin-bottom: 5px;
+          max-width: 200px;
+          padding-right: 5px;
+          color: #e60d49;
+          font-weight: 700;
+          margin-right: 85px;
+          margin-top: 20px;
+          &.done {
+            background: #e60d4b77;
+            color: #ffffff;
+            text-decoration: line-through;
+          }
+          .size-img-delete,
+          .size-img-done {
+            display: inline-block;
+            width: 30px;
+            height: auto;
+            margin: 0;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .closed {
+    position: absolute;
+    right: -50000px;
+    top: -100000px;
+  }
+}
